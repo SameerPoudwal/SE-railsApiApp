@@ -1,5 +1,4 @@
 require_relative 'boot'
-require 'file_sort'
 
 require "rails"
 # Pick the frameworks you want:

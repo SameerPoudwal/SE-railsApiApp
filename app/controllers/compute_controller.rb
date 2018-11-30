@@ -11,6 +11,6 @@ class ComputeController < ApplicationController
       x = y
       y= z
     end
-    json_response(max, :done)
+    json_response(:done)
   end
 end

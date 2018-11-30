@@ -3,12 +3,6 @@ class AlbumsController < ApplicationController
   before_action :set_album, only: [:show, :update, :destroy]
 
   def index
-    FileSort.new("winemag-data-130k-v2.csv", {
-        sort_column: 1,
-        column_separator: ",",
-        parse_as: :string,
-        replace_original: false
-    }).sort!
     @albums = Album.all
     json_response(@albums)
   end
